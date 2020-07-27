@@ -1,0 +1,93 @@
+Request method:	POST
+Request URI:	https://www.change2testautomation.com/api/insert.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "author": "Online Testing",
+    "title": "The new one",
+    "body": "The New Book"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 17:11:10 GMT
+Server: Apache
+X-Powered-By: PHP/5.6.40
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Upgrade: h2,h2c
+Connection: Upgrade
+Content-Length: 40
+Content-Type: application/json; charset=UTF-8
+
+{
+    "message": "Data Inserted Successfully"
+}
+Request method:	PUT
+Request URI:	https://www.change2testautomation.com/api/update.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "author": "Franklin Testing",
+    "id": "20"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 17:11:10 GMT
+Server: Apache
+X-Powered-By: PHP/5.6.40
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: PUT
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Upgrade: h2,h2c
+Connection: Upgrade
+Content-Length: 23
+Content-Type: application/json; charset=UTF-8
+
+{
+    "message": "Invlid ID"
+}
+Request method:	DELETE
+Request URI:	https://www.change2testautomation.com/api/delete.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "20"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 17:11:11 GMT
+Server: Apache
+X-Powered-By: PHP/5.6.40
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: DELETE
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Upgrade: h2,h2c
+Connection: Upgrade
+Content-Length: 23
+Content-Type: application/json; charset=UTF-8
+
+{
+    "message": "Invlid ID"
+}
