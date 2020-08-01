@@ -1,7 +1,13 @@
 Feature: Vaidate all the method
 
-Scenario: Validate all Resource
+Scenario Outline: Validate all Resource
 Given Initialize uri
-When Call "PostAuthor" with "post" Method
+When Call "<method>" with "<request>" Method
 Then API call got succes with status code 200
-And "message" in Response body is "Data Inserted Successfully"
+And "message" in Response body is "<responsemessage>"
+
+Examples:
+|method|request|responsemessage|
+|PostAuthor|post|Data Inserted Successfully|
+|UpdateAuthor|put|Data updated successfully|
+|DeleteAuthor|delete|Post Deleted Successfully|

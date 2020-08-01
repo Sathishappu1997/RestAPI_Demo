@@ -8,7 +8,7 @@ public class DeleteByUsingPojo {
 		
 		Delete_Body delete = new Delete_Body();
 		
-		delete.setId(155);
+		delete.setId(151);
 		
 		return delete;
 	}

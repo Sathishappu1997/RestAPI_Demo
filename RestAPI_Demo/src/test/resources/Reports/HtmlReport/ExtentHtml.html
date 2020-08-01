@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 1, 2020 10:48:03 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 1, 2020 11:11:11 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -124,7 +124,7 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -140,7 +140,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>12</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -166,7 +166,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Vaidate all the method</span>
-						<span class='test-time'>Aug 1, 2020 10:48:04 PM</span>
+						<span class='test-time'>Aug 1, 2020 11:11:12 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -176,27 +176,75 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 6s+19ms</span>
+<div class='scenario outline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 6s+113ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate all Resource</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Validate all Resource</div>
+		<table class='runtime-table table-striped table'><tr><td>method</td><td>request</td><td>responsemessage</td></tr><tr><td>PostAuthor</td><td>post</td><td>Data Inserted Successfully</td></tr><tr><td>UpdateAuthor</td><td>put</td><td>Data updated successfully</td></tr><tr><td>DeleteAuthor</td><td>delete</td><td>Post Deleted Successfully</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
-			<div class="step-name" title="StepDefinition.AllResource_Steps.initialize_uri()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize uri</div>
-			<div class="node-step"></div>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate all Resource</div>
+			<ul class='gc steps'>
+				<li test-id='4' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.initialize_uri()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize uri</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='5' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.call_with_method(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Call "PostAuthor" with "post" Method</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='6' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.api_call_got_succes_with_status_code(int)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then API call got succes with status code 200</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='7' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.in_response_body_is(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And "message" in Response body is "Data Inserted Successfully"</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
 		</li>
-		<li test-id='4' class='node when pass' status='pass'>
-			<div class="step-name" title="StepDefinition.AllResource_Steps.call_with_method(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Call "DeleteAuthor" with "delete" Method</div>
-			<div class="node-step"></div>
+		<li test-id='8' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate all Resource</div>
+			<ul class='gc steps'>
+				<li test-id='9' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.initialize_uri()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize uri</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.call_with_method(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Call "UpdateAuthor" with "put" Method</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.api_call_got_succes_with_status_code(int)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then API call got succes with status code 200</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='12' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.in_response_body_is(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And "message" in Response body is "Data updated successfully"</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
 		</li>
-		<li test-id='5' class='node then pass' status='pass'>
-			<div class="step-name" title="StepDefinition.AllResource_Steps.api_call_got_succes_with_status_code(int)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then API call got succes with status code 200</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='6' class='node and pass' status='pass'>
-			<div class="step-name" title="StepDefinition.AllResource_Steps.in_response_body_is(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And "message" in Response body is "Post Deleted Successfully"</div>
-			<div class="node-step"></div>
+		<li test-id='13' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate all Resource</div>
+			<ul class='gc steps'>
+				<li test-id='14' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.initialize_uri()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize uri</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='15' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.call_with_method(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Call "DeleteAuthor" with "delete" Method</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='16' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.api_call_got_succes_with_status_code(int)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then API call got succes with status code 200</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='17' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StepDefinition.AllResource_Steps.in_response_body_is(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And "message" in Response body is "Post Deleted Successfully"</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -236,31 +284,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>12</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 1, 2020 10:48:03 PM</div>
+					<div class='panel-lead'>Aug 1, 2020 11:11:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 1, 2020 10:48:10 PM</div>
+			 		<div class='panel-lead'>Aug 1, 2020 11:11:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 6s+953ms</div>
+					<div class='panel-lead'>0h 0m 7s+201ms</div>
 				</div>
 			</div>
 		</div>
@@ -279,8 +327,8 @@
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 3,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -289,8 +337,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 4,
-				passGrandChild: 4,
+				grandChildCount: 12,
+				passGrandChild: 12,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -303,7 +351,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Vaidate all the method":6.019
+			        "Vaidate all the method":6.113
 			};
 		</script>
 	
