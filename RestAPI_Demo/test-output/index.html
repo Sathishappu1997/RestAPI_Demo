@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Hp\AppData\Local\Temp\testng-eclipse--1908499069\testng-customsuite.xml</span>
+                    <span>C:\Users\Hp\AppData\Local\Temp\testng-eclipse--1598009408\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RunnerFile.TestRunner" hash-for-method="runScenario(&quot;Validate the Delete Method&quot;, &quot;Optional[To validate the Resources]&quot;)">runScenario("Validate the Delete Method", "Optional[To validate the Resources]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,17 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RunnerFile.TestRunner" hash-for-method="runScenario(&quot;Validate the Put Method&quot;, &quot;Optional[To validate the Resources]&quot;)">runScenario("Validate the Put Method", "Optional[To validate the Resources]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RunnerFile.TestRunner" hash-for-method="runScenario(&quot;Validate the Post Method&quot;, &quot;Optional[To validate the Resources]&quot;)">runScenario("Validate the Post Method", "Optional[To validate the Resources]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RunnerFile.TestRunner" hash-for-method="runScenario(&quot;Validate the Post Method&quot;, &quot;Optional[To validate the Resources]&quot;)">runScenario("Validate the Post Method", "Optional[To validate the Resources]")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RunnerFile.TestRunner" hash-for-method="runScenario(&quot;Validate all Resource&quot;, &quot;Optional[Vaidate all the method]&quot;)">runScenario("Validate all Resource", "Optional[Vaidate all the method]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,34 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">RunnerFile.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Validate the Delete Method&quot;, &quot;Optional[To validate the Resources]&quot;)">
-                  </a> <!-- runScenario("Validate the Delete Method", "Optional[To validate the Resources]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the Delete Method", "Optional[To validate the Resources]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Post Deleted Successfully] but found [Invlid ID]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at StepDefinition.Delete_Steps.validate_the_delete_response_using_jsonpath(Delete_Steps.java:46)
-	at ✽.validate the delete Response using jsonpath(file:///C:/Users/Hp/eclipse-workspace/RestAPI_Demo/src/test/resources/Feature%20File/Resources.feature:27)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -179,30 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate the Put Method&quot;, &quot;Optional[To validate the Resources]&quot;)">
-                  </a> <!-- runScenario("Validate the Put Method", "Optional[To validate the Resources]") -->
+                  <a name="runScenario(&quot;Validate all Resource&quot;, &quot;Optional[Vaidate all the method]&quot;)">
+                  </a> <!-- runScenario("Validate all Resource", "Optional[Vaidate all the method]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the Put Method", "Optional[To validate the Resources]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Validate the Post Method&quot;, &quot;Optional[To validate the Resources]&quot;)">
-                  </a> <!-- runScenario("Validate the Post Method", "Optional[To validate the Resources]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the Post Method", "Optional[To validate the Resources]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Validate the Post Method&quot;, &quot;Optional[To validate the Resources]&quot;)">
-                  </a> <!-- runScenario("Validate the Post Method", "Optional[To validate the Resources]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the Post Method", "Optional[To validate the Resources]")</span>
+                  <span class="parameters">("Validate all Resource", "Optional[Vaidate all the method]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -212,7 +140,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hp\AppData\Local\Temp\testng-eclipse--1908499069\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Hp\AppData\Local\Temp\testng-eclipse--1598009408\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -269,23 +197,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'RunnerFile.TestRunner')
-data.setCell(0, 3, 5093);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'RunnerFile.TestRunner')
-data.setCell(1, 3, 537);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'RunnerFile.TestRunner')
-data.setCell(2, 3, 534);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'RunnerFile.TestRunner')
-data.setCell(3, 3, 532);
+data.setCell(0, 3, 6351);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -322,26 +238,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate the Post Method", "Optional[To validate the Resources]")</span>
-                <span class="method-start">899 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Validate the Post Method", "Optional[To validate the Resources]")</span>
-                <span class="method-start">6003 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Validate the Put Method", "Optional[To validate the Resources]")</span>
-                <span class="method-start">6546 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Validate the Delete Method", "Optional[To validate the Resources]")</span>
-                <span class="method-start">7080 ms</span>
+                <span class="method-name">runScenario("Validate all Resource", "Optional[Vaidate all the method]")</span>
+                <span class="method-start">739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">7624 ms</span>
+                <span class="method-start">7095 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

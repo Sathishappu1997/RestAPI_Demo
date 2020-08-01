@@ -43,9 +43,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>ExtentReports</span>
@@ -54,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 26, 2020 10:19:33 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 1, 2020 10:48:03 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -70,25 +68,12 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
 			<!-- test toggle -->
 			<!-- category toggle -->
-			<div class='chip transparent'>
-				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-				<i class='material-icons'>local_offer</i> Category
-				</a>
-				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@PostMethod</a></li>
-					<li><a href='#'>@PutMethod</a></li>
-					<li><a href='#'>@DeleteMethod</a></li>
-					<li class='divider'></li>
-					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
-				</ul>
-			</div>
 			<!-- category toggle -->
 			<!-- clear filters -->
 			<div class='chip transparent hide'>
@@ -125,10 +110,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -139,10 +124,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -155,10 +140,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='93.75%'><span class='strong'>15</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='6.25%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -178,11 +163,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>To validate the Resources</span>
-						<span class='test-time'>Jul 26, 2020 10:19:34 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Vaidate all the method</span>
+						<span class='test-time'>Aug 1, 2020 10:48:04 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,119 +176,27 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario outline node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label'>@PostMethod</span>
-	</div>
-	<span class='duration right label'>0h 0m 5s+247ms</span>
+<div class='scenario node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 6s+19ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Validate the Post Method</div>
-		<table class='runtime-table table-striped table'><tr><td>body</td><td>title</td><td>author</td></tr><tr><td>API Rest</td><td>Automation</td><td>Franklin</td></tr><tr><td>Rest Assured</td><td>Automation</td><td>Joshi</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate all Resource</div>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate the Post Method</div>
-			<ul class='gc steps'>
-				<li test-id='4' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.initialize_base_uri_and_base_path()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize base uri and base path</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='5' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.call_the_pojo_class()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Call the pojo class</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='6' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.get_the_response_for_post_method_with_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Get the Response for Post Method with "API Rest" "Automation" and "Franklin"</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='7' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.validate_the_response_using_jsonpath()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And validate the Response using jsonpath</h6>
-					<div class="node-step"></div>
-				</li>
-			</ul>
-		</li>
-		<li test-id='8' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Validate the Post Method</div>
-			<ul class='gc steps'>
-				<li test-id='9' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.initialize_base_uri_and_base_path()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize base uri and base path</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='10' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.call_the_pojo_class()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Call the pojo class</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='11' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.get_the_response_for_post_method_with_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Get the Response for Post Method with "Rest Assured" "Automation" and "Joshi"</h6>
-					<div class="node-step"></div>
-				</li>
-				<li test-id='12' class='gc and pass' status='pass'>
-					<h6 class="step-name" title="StepDefinition.Post_Steps.validate_the_response_using_jsonpath()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And validate the Response using jsonpath</h6>
-					<div class="node-step"></div>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='13' status='pass'>
-	<div class='category-list'>
-		<span class='category label'>@PutMethod</span>
-	</div>
-	<span class='duration right label'>0h 0m 0s+519ms</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the Put Method</div>
-	</div>
-	<ul class='steps'>
-		<li test-id='14' class='node given pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Post_Steps.initialize_base_uri_and_base_path()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize base uri and base path</div>
+		<li test-id='3' class='node given pass' status='pass'>
+			<div class="step-name" title="StepDefinition.AllResource_Steps.initialize_uri()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize uri</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='15' class='node when pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Put_Steps.call_the_put_pojo_class()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When call the put pojo class</div>
+		<li test-id='4' class='node when pass' status='pass'>
+			<div class="step-name" title="StepDefinition.AllResource_Steps.call_with_method(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Call "DeleteAuthor" with "delete" Method</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='16' class='node then pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Put_Steps.get_the_response_for_put_method()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Get the Response for Put Method</div>
+		<li test-id='5' class='node then pass' status='pass'>
+			<div class="step-name" title="StepDefinition.AllResource_Steps.api_call_got_succes_with_status_code(int)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then API call got succes with status code 200</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='17' class='node and pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Put_Steps.validate_the_put_response_using_jsonpath()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And validate the put Response using jsonpath</div>
+		<li test-id='6' class='node and pass' status='pass'>
+			<div class="step-name" title="StepDefinition.AllResource_Steps.in_response_body_is(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And "message" in Response body is "Post Deleted Successfully"</div>
 			<div class="node-step"></div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='18' status='fail'>
-	<div class='category-list'>
-		<span class='category label'>@DeleteMethod</span>
-	</div>
-	<span class='duration right label'>0h 0m 0s+518ms</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Validate the Delete Method</div>
-	</div>
-	<ul class='steps'>
-		<li test-id='19' class='node given pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Post_Steps.initialize_base_uri_and_base_path()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Initialize base uri and base path</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='20' class='node when pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Delete_Steps.call_the_delete_pojo_class()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When call the delete pojo class</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='21' class='node then pass' status='pass'>
-			<div class="step-name" title="StepDefinition.Delete_Steps.get_the_response_for_delete_method()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Get the Response for delete Method</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='22' class='node and fail' status='fail'>
-			<div class="step-name" title="StepDefinition.Delete_Steps.validate_the_delete_response_using_jsonpath()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>And validate the delete Response using jsonpath</div>
-			<textarea disabled class="code-block">java.lang.AssertionError: expected [Post Deleted Successfully] but found [Invlid ID]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at StepDefinition.Delete_Steps.validate_the_delete_response_using_jsonpath(Delete_Steps.java:46)
-	at ?.validate the delete Response using jsonpath(file:///C:/Users/Hp/eclipse-workspace/RestAPI_Demo/src/test/resources/Feature%20File/Resources.feature:27)
-</textarea>
 		</li>
 	</ul>
 </div>
@@ -329,206 +222,7 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='category-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='category-collection' class='category-collection'>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@PostMethod</span>
-						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 26, 2020 10:19:34 PM</td>
-										<td class='linked' test-id='2'>Validate the Post Method</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 26, 2020 10:19:34 PM</td>
-										<td class='linked' test-id='3'>Validate the Post Method</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 26, 2020 10:19:39 PM</td>
-										<td class='linked' test-id='8'>Validate the Post Method</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@PutMethod</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 26, 2020 10:19:39 PM</td>
-										<td class='linked' test-id='13'>Validate the Put Method</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@DeleteMethod</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 26, 2020 10:19:40 PM</td>
-										<td class='linked' test-id='18'>Validate the Delete Method</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='category-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 26, 2020 10:19:40 PM</td>
-										<td class='linked' test-id='22'>And validate the delete Response using jsonpath</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [Post Deleted Successfully] but found [Invlid ID]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at StepDefinition.Delete_Steps.validate_the_delete_response_using_jsonpath(Delete_Steps.java:46)
-	at ?.validate the delete Response using jsonpath(file:///C:/Users/Hp/eclipse-workspace/RestAPI_Demo/src/test/resources/Feature%20File/Resources.feature:27)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -542,73 +236,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 26, 2020 10:19:33 PM</div>
+					<div class='panel-lead'>Aug 1, 2020 10:48:03 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 26, 2020 10:19:40 PM</div>
+			 		<div class='panel-lead'>Aug 1, 2020 10:48:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 7s+454ms</div>
-				</div>
-			</div>
-			<div class='col s6'>
-				<div class='card-panel dashboard-categories'>
-					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
-					
-					<table>
-						<tr>
-							<th>Name</th>
-							<th>Passed</th>
-							<th>Failed</th>
-							<th>Skipped</th>
-							<th>Passed %</th>
-						</tr>
-						<tr>
-							<td>@PostMethod</td>
-							<td>3</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@PutMethod</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@DeleteMethod</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-					</table>
+					<div class='panel-lead'>0h 0m 6s+953ms</div>
 				</div>
 			</div>
 		</div>
@@ -620,38 +272,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
-				childCount: 4,
-				passChild: 3,
-				failChild: 1,
+				exceptionsParent: 0,
+				childCount: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 16,
-				passGrandChild: 15,
-				failGrandChild: 1,
+				exceptionsChild: 0,
+				grandChildCount: 4,
+				passGrandChild: 4,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "To validate the Resources":6.322
+			        "Vaidate all the method":6.019
 			};
 		</script>
 	

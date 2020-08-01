@@ -8,8 +8,8 @@ public class PutByUsingPojo {
 		
 		Put_Body put = new Put_Body();
 		
-		put.setAuthor("Franklin");
-		put.setId(23);
+		put.setAuthor("updated new name");
+		put.setId(155);
 		
 		return put;
 		
